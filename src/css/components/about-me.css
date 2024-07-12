@@ -1,0 +1,221 @@
+.about-me h2 {
+  margin-bottom: 40px;
+}
+.about-me {
+  padding-top: 80px;
+}
+
+.about-me h2 span {
+  color: #00b068;
+}
+
+.foto {
+  border-radius: 20px;
+  width: 320px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+.bio h3 {
+  margin-bottom: 32px;
+}
+
+.bio p {
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+.bio {
+  margin-bottom: 40px;
+}
+
+.about-subtitle {
+  font-family: 'Poppins';
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.bio {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.fon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about-me h2 {
+    font-size: 108px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+  }
+  .about-me {
+    background-image: url('/img/about-me/bac-t-1x.png');
+    background-repeat: no-repeat;
+    background-position: right bottom 156px;
+    padding-top: 124px;
+  }
+
+  .about-education-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .about-education-list-item {
+    width: 50%;
+  }
+
+  .about-education-list-item:first-child {
+    margin-bottom: unset;
+  }
+
+  .about-education-sublist-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .foto {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+    max-width: none;
+  }
+
+  .bio {
+    position: relative;
+    margin-top: 0;
+    margin-left: 32px;
+  }
+
+  .bio h3 {
+    font-size: 36px;
+    letter-spacing: 0.005em;
+    line-height: 1.5;
+  }
+
+  .bio p {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+  }
+
+  .fon {
+    position: absolute;
+    width: 336px;
+    height: 252px;
+    display: flex;
+  }
+
+  .about {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-me {
+    padding-top: 164px;
+  }
+  .about-me h2 {
+    text-align: start;
+  }
+  .about-me {
+    background-image: url('/img/about-me/bac-d-1x.png');
+    background-repeat: no-repeat;
+    background-position: right 60px bottom 200px;
+  }
+  .about-education {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 104px;
+  }
+
+  .about-education-list {
+    gap: 136px;
+    max-width: 904px;
+  }
+
+  .content {
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .bio {
+    max-width: 30%;
+    margin-left: 136px;
+  }
+
+  .foto {
+    margin-top: 272px;
+    width: 384px;
+    height: 448px;
+  }
+
+  .fon {
+    bottom: -20%;
+    right: -5%;
+    width: 384px;
+    height: 288px;
+  }
+}
+
+.about-education-list-item:first-child {
+  margin-bottom: 40px;
+}
+
+.about-education-sublist {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.about-education-sublist-item {
+  position: relative;
+  padding-left: 32px;
+}
+
+.about-education-sublist-item {
+  font-family: 'Poppins';
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+.about-education-sublist-item::marker {
+  color: #00b068;
+}
+
+.about-education-sublist-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* retina */
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .section-benefits {
+    background-image: url('/img/about-me/bac-d-2x');
+    width: 100%;
+  }
+}
+
+.dark-theme .about,
+.dark-theme .about-two {
+  color: #f0f0f0;
+}

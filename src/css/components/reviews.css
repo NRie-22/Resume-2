@@ -1,0 +1,193 @@
+.reviews-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.reviews-container {
+  max-width: 704px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.reviews-title {
+  font-family: 'Impact', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.review-card {
+  border-radius: 16px;
+  width: 320px;
+  padding: 32px;
+  min-height: 224px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #e4e5e6;
+  display: flex;
+  width: 704px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.review-card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  opacity: 0.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 96px;
+  align-self: stretch;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.review-card-author-avata {
+  border-radius: 24px;
+}
+.review-card-author {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-card-author-avatar {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.review-card-author-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  font-style: normal;
+  color: #292929;
+}
+
+.slider-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+
+.btn-custom-next,
+.btn-custom-prev {
+  border: 1px solid rgba(41, 41, 41, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px !important;
+  height: 40px !important;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom-prev {
+  transform: rotate(180deg);
+}
+
+.reviews-arrow {
+  flex-shrink: 0;
+  fill: transparent;
+  stroke: #292929;
+}
+
+.swiper-button-disabled {
+  border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.swiper-button-disabled svg {
+  stroke: #cccccc;
+}
+
+.btn-custom-next,
+.btn-custom-prev {
+  width: 48px !important;
+  height: 48px !important;
+  transition: background-color 0.4s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-custom-next:active,
+.btn-custom-prev:active,
+.btn-custom-next:hover,
+.btn-custom-prev:hover {
+  background-color: #e4e5e6;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 124px;
+    padding-top: 124px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-section {
+    padding-bottom: 164px;
+    padding-top: 164px;
+  }
+
+  .reviews-container {
+    max-width: 1280px;
+  }
+  .reviews-title {
+    font-size: 108px;
+  }
+}
+
+.dark-theme .review-card-text,
+.dark-theme .review-card-author-name {
+  color: #f0f0f0;
+}
+
+.dark-theme .review-card {
+  background-color: #2a2d32;
+}
+
+.dark-theme .reviews-arrow {
+  stroke: #e4e5e6;
+}
+.dark-theme .swiper-button-disabled svg {
+  stroke: #2a2d32;
+}
+
+.dark-theme .btn-custom-next:active,
+.dark-theme .btn-custom-next:hover,
+.dark-theme .btn-custom-prev:active,
+.dark-theme .btn-custom-prev:hover {
+  background-color:  #3b3f45;
+}

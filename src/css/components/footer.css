@@ -1,0 +1,172 @@
+.section-footer{
+  display: flex;
+}
+
+.footer-container {
+  border-top: 1px solid #e4e5e6;
+  padding: 40px 20px 24px 20px;
+  width: 360px;
+}
+
+.footer-logo {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.footer-logo-part {
+  color: #00b068;
+}
+
+.footer-title {
+  margin-top: 32px;
+}
+
+.social-media {
+  margin-bottom: 24px;
+}
+.social-media-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  color: #292929;
+}
+
+.footer-list {
+  margin-bottom: 40px;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  color: #00b068;
+}
+
+.centered-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  justify-content: center;
+}
+
+.centered-text p {
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: flex;
+    gap: 40px;
+  }
+  .footer-container {
+    width: 768px;
+  }
+  .centered-text p {
+    display: inline;
+  }
+
+  .social-media {
+    margin-bottom: 0;
+  }
+  .centered-text {
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    border-top: 1px solid #e4e5e6;
+    padding: 40px 32px 24px 32px;
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-title {
+    margin: 0;
+  }
+  .footer-list {
+    margin-bottom: 44px;
+  }
+}
+
+.scroll-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  transform: scale(0);
+  visibility: hidden;
+  z-index: 99999;
+  opacity: 0;
+  transition: all 0.3s #00b068;
+}
+
+.scroll-btn:focus,
+.scroll-btn:hover {
+  background-color: #00b068;
+}
+
+.scroll-btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #292929;
+  opacity: 0.6;
+}
+
+.is-active-scroll {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-btn.is-active-scroll {
+  display: block;
+  /* Інші стилі для активної кнопки */
+}
+
+.scroll-btn.rocket-launch {
+  animation: rocket-animation 1s forwards;
+}
+
+@keyframes rocket-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px); /* Коригуйте значення для бажаного ефекту */
+  }
+}
+
+ .dark-theme .heder-logo,
+ .dark-theme .footer-logo,
+ .dark-theme .nav-link,
+ .dark-theme .social-media-link,
+ .dark-theme .centered-text p,
+ .dark-theme .footer-container,
+ .dark-theme .icon-burger,
+ .dark-theme.contered-color {
+   color: #FFFFFF;
+ }
+
+ .dark-theme .social-media-link:hover,
+.dark-theme .social-media-link:active {
+color:  #14c57c;
+}

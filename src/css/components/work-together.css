@@ -1,0 +1,366 @@
+.contacts-list-link-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1px;
+  stroke: #00b068;
+  fill: none;
+  align-items: center;
+  align-items: center;
+  margin-right: 18.25px;
+}
+.work-together-section {
+  padding-bottom: 80px;
+}
+
+.work-together-title {
+  margin-bottom: 40px;
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.span-green {
+  color: #00b068;
+}
+
+.work-together-text {
+  margin-bottom: 32px;
+}
+
+.work-together-address {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-together-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-together-link:hover,
+.work-together-link:active {
+color: #00b068;
+}
+
+.work-together-container-input {
+  position: relative;
+  margin-bottom: 32px;
+}
+.work-together-input {
+  padding: 12px 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  background: #e4e5e6;
+}
+
+.work-together-input-email {
+  width: 100%;
+  height: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+  border: none;
+}
+
+.work-together-address-icon-form {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  color: #292929;
+}
+
+.work-together-input-message {
+  margin-bottom: 4px;
+  display: block;
+  width: 100%;
+  height: 128px;
+  background: #e4e5e6;
+  border-radius: 8px;
+  border: none;
+}
+
+.work-together-error-message {
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.work-together-input:focus-within {
+  border: none;
+  outline: none;
+}
+
+.work-together-input::placeholder {
+  color: rgba(41, 41, 41, 0.4);
+}
+
+.work-together-btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 100%;
+  height: 48px;
+  background: #00b068;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-together-btn:hover,
+.work-together-btn:active{
+  background:  #009156;
+}
+
+.work-together-picture {
+  display: none;
+}
+
+.work-together-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #292929;
+}
+
+.work-together-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.work-together-modal {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  background: #f0f0f0;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 16px;
+  padding: 48px 32px;
+}
+
+.work-together-modal-btn-closing {
+  z-index: 10;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  stroke: #292929;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+}
+
+.work-together-modal-main {
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b068;
+}
+
+.work-together-modal-second {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .work-together-section {
+    background-image: url('/img/about-me/bac-t-1x.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-bottom: 124px;
+  }
+
+  .work-together-container {
+    position: relative;
+  }
+
+  .work-together-title {
+    margin-bottom: 60px;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: var(--fls-tittle-tabl);
+  }
+
+  .work-together-text {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+  }
+
+  .work-together-adress {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .work-together-btn {
+    width: 174px;
+  }
+
+  .work-together-modal {
+    width: 100%;
+    max-width: 492px;
+    padding: 64px 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .work-together-section {
+    background-image: url('/img/about-me/bac-d-1x.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-bottom: 164px;
+  }
+
+  .work-together-title {
+    margin-bottom: 80px;
+    width: 507px;
+  }
+
+  .work-together-form {
+    width: 592px;
+  }
+
+  .work-together-adress {
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .work-together-container-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-together-container-desktop-text {
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .work-together-link:hover,
+  .work-together-link:focus {
+    color: #00b068;
+  }
+
+  .work-together-btn:hover,
+  .work-together-btn:focus {
+    background: #00b068;
+  }
+}
+/* retina */
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .work-together-section {
+    background-image: url('/img/benefits/smt-2x.png');
+    width: 100%;
+  }
+}
+
+.dark-theme .work-together-text,
+.dark-theme .work-together-link {
+  color: #f0f0f0;
+}
+.dark-theme .work-together-link:hover,
+.dark-theme .work-together-link:active {
+color: #00b068;
+}
+.dark-theme .work-together-input {
+  background: #2a2d32;
+}
+
+.dark-theme .work-together-input::placeholder {
+  color: rgba(240, 240, 240, 0.4);
+}
+
+.dark-theme .work-together-modal {
+  background: #2a2d32;
+}
+
+.dark-theme .work-together-modal-second {
+  color: #e4e5e6;
+}
+
+.dark-theme .work-together-modal-btn-closing {
+  stroke: #e4e5e6;
+}
+
+.dark-theme .work-together-input-email {
+  color: #e4e5e6;
+}
+.dark-theme .work-together-input {
+  color: #e4e5e6;
+}
+
+.dark-theme .work-together-btn {
+background-color: #14c57c;;
+}
+
+.dark-theme .work-together-btn:hover,
+.dark-theme .work-together-btn:active{
+background-color:  #009156;
+}
